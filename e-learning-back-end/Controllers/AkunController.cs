@@ -27,5 +27,12 @@ namespace e_learning_back_end.Controllers
             var result = akunRepo.CreateAccount(model);
             return Ok(result);
         }
+
+        [HttpPost]
+        public IActionResult Login(string username, string password)
+        {
+            var result = akunRepo.Login(username, password);
+            return Ok(result);
+        }
     }
 }

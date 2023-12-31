@@ -65,5 +65,56 @@ namespace e_learning_back_end.logics.Repositories
                 throw new Exception(ex.Message);
             }
         }
+
+        public string Login(string username, string password)
+        {
+            string returnedOutput = "";
+            try
+            {
+                using var conn = new SqlConnection(connString);
+                conn.Open();
+                var query = @"
+                IF(SELECT COUNT(*) FROM master_akun WHERE username = @username AND password = @password) > 0
+                BEGIN
+                    SELECT * FROM master_akun WHERE username = @username AND password = @password
+                END
+                ELSE
+                BEGIN
+                    SELECT * FROM master_akun WHERE email = @username AND password = @password
+                END
+                ";
+                var account = conn.QueryFirstOrDefault<AkunModel>(query, new {username, password});
+
+                if(account != null)
+                {
+                    var responseBody = new
+                    {
+                        Success = true,
+                        Message = "OK",
+                        Account = account
+                    };
+                    returnedOutput = JsonSerializer.Serialize(responseBody);
+                }
+                else
+                {
+                    var responseBody = new
+                    {
+                        Success = false,
+                        Message = $"Tidak ada akun dengan username/email {username}"
+                    };
+                    returnedOutput = JsonSerializer.Serialize(responseBody);
+                }
+            }
+            catch(Exception ex)
+            {
+                var responseBody = new
+                {
+                    Success = false,
+                    Message = $"Error : {ex.Message}",
+                };
+                returnedOutput = JsonSerializer.Serialize(responseBody);
+            }
+            return returnedOutput;
+        }
     }
 }
