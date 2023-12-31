@@ -1,4 +1,5 @@
 ﻿using e_learning_back_end.logics.Interfaces;
+using e_learning_back_end.logics.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace e_learning_back_end.Controllers
@@ -17,6 +18,13 @@ namespace e_learning_back_end.Controllers
         public IActionResult GetProviceList()
         {
             var result = akunRepo.GetProvinsiList();
+            return Ok(result);
+        }
+
+        [HttpPost]
+        public IActionResult CreateAccount(AkunModel model)
+        {
+            var result = akunRepo.CreateAccount(model);
             return Ok(result);
         }
     }

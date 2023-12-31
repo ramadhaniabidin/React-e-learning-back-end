@@ -10,5 +10,7 @@ namespace e_learning_back_end.logics.Interfaces
     public interface IAkunRepo
     {
         public List<ProvinsiModel> GetProvinsiList();
+        public string CreateAccount(AkunModel model);
+        public string Login(string username, string password);
     }
 }
