@@ -1,0 +1,12 @@
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\bin\Debug\net6.0\e-learning-back-end.logics.deps.json
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\bin\Debug\net6.0\e-learning-back-end.logics.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\bin\Debug\net6.0\e-learning-back-end.logics.pdb
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\obj\Debug\net6.0\e-learning-back-end.logics.csproj.AssemblyReference.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\obj\Debug\net6.0\e-learning-back-end.logics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\obj\Debug\net6.0\e-learning-back-end.logics.AssemblyInfoInputs.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\obj\Debug\net6.0\e-learning-back-end.logics.AssemblyInfo.cs
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\obj\Debug\net6.0\e-learning-back-end.logics.csproj.CoreCompileInputs.cache
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\obj\Debug\net6.0\e-learning-back-end.logics.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\obj\Debug\net6.0\refint\e-learning-back-end.logics.dll
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\obj\Debug\net6.0\e-learning-back-end.logics.pdb
+C:\Users\ramad\OneDrive\Documents\Belajar\.NET Web API\e-learning-back-end\e-learning-back-end.logics\obj\Debug\net6.0\ref\e-learning-back-end.logics.dll
