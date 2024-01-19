@@ -11,6 +11,7 @@ namespace e_learning_back_end.logics.Interfaces
     {
         public List<ProvinsiModel> GetProvinsiList();
         public string CreateAccount(AkunModel model);
-        public string Login(string username, string password);
+        public string Login(LoginModel model);
+        public string EncryptCredentials(LoginModel model);
     }
 }

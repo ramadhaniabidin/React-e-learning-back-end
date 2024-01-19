@@ -29,9 +29,18 @@ namespace e_learning_back_end.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(string username, string password)
+        public IActionResult Login(LoginModel model)
         {
-            var result = akunRepo.Login(username, password);
+            var result = akunRepo.Login(model);
+            return Ok(result);
+        }
+
+        [HttpPost]
+        public IActionResult EncryptCredentials(LoginModel model)
+        {
+            //string encryptionKey = "1.e4 c6, 2.d4 d5";
+            //Console.WriteLine(encryptionKey);
+            var result = akunRepo.EncryptCredentials(model);
             return Ok(result);
         }
     }
